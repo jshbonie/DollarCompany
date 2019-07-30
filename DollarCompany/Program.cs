@@ -6,8 +6,10 @@ using System.Windows.Forms;
 
 namespace DollarCompany
 {
-    static class Program
+    public static class Program
     {
+        public static StartForm startForm;
+        public static SplashScreenForm splashForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,11 @@ namespace DollarCompany
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formMain());
+
+            startForm = new StartForm();
+            splashForm = new SplashScreenForm();
+
+            Application.Run(splashForm);
         }
     }
 }

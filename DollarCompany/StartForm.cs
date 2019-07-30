@@ -11,20 +11,17 @@ using System.Threading;
 
 namespace DollarCompany
 {
-    public partial class formMain : Form
+    public partial class StartForm : Form
     {
-        public formMain()
+        public StartForm()
         {
-            Thread t = new Thread(new ThreadStart(StartForm));
-            t.Start();
-            Thread.Sleep(3000);
+          
             InitializeComponent();
-            t.Abort();
         }
 
-        public void StartForm()
+        private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Run(new formSplashScreen());
+            Application.Exit();
         }
     }
 }

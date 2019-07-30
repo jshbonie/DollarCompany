@@ -46,22 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="formMain.cs">
+    <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formMain.Designer.cs">
-      <DependentUpon>formMain.cs</DependentUpon>
+      <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="formSplashScreen.cs">
+    <Compile Include="SplashScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formSplashScreen.Designer.cs">
-      <DependentUpon>formSplashScreen.cs</DependentUpon>
+    <Compile Include="SplashScreenForm.Designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="formSplashScreen.resx">
-      <DependentUpon>formSplashScreen.cs</DependentUpon>
+    <EmbeddedResource Include="formMain.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
