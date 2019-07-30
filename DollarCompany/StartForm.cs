@@ -19,6 +19,11 @@ namespace DollarCompany
             InitializeComponent();
         }
 
+        /// <summary>
+        /// In charge of closing the application properly 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
