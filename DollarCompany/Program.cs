@@ -10,6 +10,7 @@ namespace DollarCompany
     {
         public static StartForm startForm;
         public static SplashScreenForm splashForm;
+        public static myAboutForm myAboutForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -21,6 +22,7 @@ namespace DollarCompany
 
             startForm = new StartForm();
             splashForm = new SplashScreenForm();
+            myAboutForm = new myAboutForm();
 
             Application.Run(splashForm);
         }

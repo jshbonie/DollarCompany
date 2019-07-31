@@ -7,31 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace DollarCompany
 {
-    public partial class StartForm : Form
+    public partial class SelectForm : Form
     {
-        public StartForm()
+        public SelectForm()
         {
-          
             InitializeComponent();
         }
 
         /// <summary>
-        /// In charge of closing the application properly 
+        /// This is the event handler for the exitToolStripItem click event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Program.myAboutForm.ShowDialog();
         }
     }
 }
